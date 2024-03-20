@@ -1,7 +1,13 @@
 import React from "react";
+import { UserButton } from "@clerk/nextjs";
 
 const HomePage = () => {
-  return <div>HomePage</div>;
+  return (
+    <div>
+      <p>Home</p>
+      <UserButton afterSignOutUrl="/" />
+    </div>
+  );
 };
 
 export default HomePage;
